@@ -1,10 +1,9 @@
 # Cardapio
 
 
+Segue um video do codigo rodando com integração do banco de dados, se quiser dar uma olhada, mas anexei o schema do banco de dados no google classrom 
 
-
-
-
+https://github.com/JoaoVitor75/Cardapio/assets/109941281/97b1d6f9-62b9-4e37-8576-f1856e07a3c9
 
 
 Sistema de Gerenciamento de Produtos de Sushi
