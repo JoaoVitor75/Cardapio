@@ -121,6 +121,12 @@ Corpo da Requisição:
 
 Front End do app CardapioSushi
 
+Este repositório contém um arquivo chamado apiFetch.js que configura uma instância do Axios para facilitar as requisições HTTP à API hospedada em "http://localhost:8080".
+
+Configuração do Axios para API Fetch
+Arquivo: apiFetch.js
+O arquivo apiFetch.js cria uma instância do Axios chamada apiFetch com uma base URL configurada para "http://localhost:8080". Esta instância pode ser importada em outros arquivos para realizar requisições à API de forma simplificada.
+
 Componente React - Menu
 Arquivo: Menu.jsx
 Este componente React é responsável por exibir o cardápio do restaurante de sushi. Ele busca dinamicamente os dados dos produtos de sushi de uma API, cria uma lista de itens de cardápio e exibe detalhes de um item quando clicado.
