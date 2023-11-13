@@ -1,10 +1,13 @@
 # Cardapio
 
-
 Segue um video do codigo rodando com integração do banco de dados, se quiser dar uma olhada, mas anexei o schema do banco de dados no google classrom 
 
 https://github.com/JoaoVitor75/Cardapio/assets/109941281/97b1d6f9-62b9-4e37-8576-f1856e07a3c9
 
+-Para rodar o projeto, primeiro configure o banco de dados com o schema que foi anexado no class
+-Depois rode o back end
+-Rode o front end, abrindo um terminal e digitando o seguinte comando " npm run dev "
+-Abra o http://localhost:5173 e pronto.
 
 Sistema de Gerenciamento de Produtos de Sushi
 Este projeto consiste em um Sistema Simples de Gerenciamento de Produtos de Sushi, desenvolvido em Java utilizando o framework Spring Boot.
