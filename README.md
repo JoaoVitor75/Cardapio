@@ -3,7 +3,7 @@ Projeto Sushi 🍣
 Este projeto consiste em um Sistema Simples de Gerenciamento de Produtos de Sushi, desenvolvido em Java utilizando o framework Spring Boot.
 O sistema permite a gestão de produtos (itens de sushi) com funcionalidades como busca por ID, criação, listagem de todos os produtos, exclusão por ID e atualização por ID.
 
-** Como rodar ** 
+**Como rodar** 
 -Importe ou baixe os arquivos no GitHub
 -Abra os dois codigos com a sua IDE de preferência
 -Rode o back end ("sushi")
