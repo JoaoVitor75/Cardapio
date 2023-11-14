@@ -104,14 +104,14 @@ const Menu = () => {
   const menuItems = [
     { name: 'Grelhado', price: 24, image: 'https://vilaserena.uaizap.com.br/_core/_uploads/83/2023/07/16361607231cghegddf6.jpeg', description: 'Peixe grelhado com temperos especiais.' },
     { name: 'Philadelfia', price: 24, image: 'https://receitinhas.com.br/wp-content/uploads/2018/08/Sushi-filadelfia-uramaki-Sabor-na-Mesa.jpg', description: 'Salmão, cream cheese e alga.' },
-    { name: 'Kani', price: 18, image: 'url_para_kani.jpg', description: 'Kani, pepino e arroz.' },
-    { name: 'Temaki', price: 32, image: 'url_para_temaki.jpg', description: 'Enrolado de alga com peixe e arroz.' },
-    { name: 'Joy', price: 8, image: 'url_para_joy.jpg', description: 'Pequenos bolinhos de arroz cobertos com peixe.' },
-    { name: 'Sashimi', price: 32, image: 'url_para_sashimi.jpg', description: 'Fatias finas de peixe cru.' },
-    { name: 'Ceviche', price: 29, image: 'url_para_ceviche.jpg', description: 'Peixe marinado em suco de limão.' },
-    { name: 'Doritos', price: 26, image: 'url_para_doritos.jpg', description: 'Rolinho de alga com doritos e salmão.' },
-    { name: 'Poke', price: 35, image: 'url_para_novo_sabor_1.jpg', description: 'Tigela de arroz com peixe cru, vegetais e molhos saborosos.' },
-    { name: 'Atum', price: 14.00, image: 'url_para_novo_sabor_2.jpg', description: 'Sashimi de atum fresco, fatiado finamente para apreciação.' },
+    { name: 'Kani', price: 18, image: 'https://static.ifood-static.com.br/image/upload/t_high/pratos/a0e7672b-eb0c-4248-8ea5-77c57592515d/201911261708_vMtu__.jpg', description: 'Kani, pepino e arroz.' },
+    { name: 'Temaki', price: 32, image: 'https://static.itdg.com.br/images/1200-675/774375583e3775acf3328a7c7a0a0470/303152-original.jpg', description: 'Enrolado de alga com peixe e arroz.' },
+    { name: 'Joy', price: 8, image: 'https://www.sabornamesa.com.br/media/k2/items/cache/7abf53d37910228532f1b4478f170c08_XL.jpg', description: 'Pequenos bolinhos de arroz cobertos com peixe.' },
+    { name: 'Sashimi', price: 32, image: 'https://www.receiteria.com.br/wp-content/uploads/receitas-de-sashimi-de-salmao-0.jpg', description: 'Fatias finas de peixe cru.' },
+    { name: 'Ceviche', price: 29, image: 'https://www.emporiumpax.com.br/wp-content/uploads/2022/04/receita-de-ceviche-de-tilapia.webp', description: 'Peixe marinado em suco de limão.' },
+    { name: 'Doritos', price: 26, image: 'https://s3.us-west-2.amazonaws.com/whatsmenu/production/sushitop/products/35532/uramakidoris001jpg', description: 'Rolinho de alga com doritos e salmão.' },
+    { name: 'Poke', price: 35, image: 'https://www.becel.com.br/-/media/Project/Upfield/Brands/Becel-NL/Becel-BR/Assets/Recipes/1584187a-93ca-44b1-a693-d65d62709f90.jpg?rev=663ac0d7e3c94715b0e2dbbe9a16c9aa', description: 'Tigela de arroz com peixe cru, vegetais e molhos saborosos.' },
+    { name: 'Atum', price: 14.00, image: 'https://img.cybercook.com.br/receitas/96/sushi-de-atum-1.jpeg', description: 'Sashimi de atum fresco, fatiado finamente para apreciação.' },
   ];
 
   const handleItemClick = (index) => {
@@ -125,14 +125,14 @@ const Menu = () => {
         <Subtitle>Cardápio</Subtitle>
       </Header>
       <MenuList>
-        {data.map((item, index) => (
+        {menuItems.map((item, index) => (
           <MenuItem key={index} onClick={() => handleItemClick(index)} >
-            <img src={item.imagens} alt={item.nome} onClick={() => handleItemClick(index)} />
-            <span>{item.nome}</span>
-            <span>R$ {item.preco.toFixed(2)}</span>
+            <img src={item.image} alt={item.name} onClick={() => handleItemClick(index)} />
+            <span>{item.name}</span>
+            <span>R$ {item.price.toFixed(2)}</span>
             <Details visible={selectedItem === index}>
-              <h3>{item.nome}</h3>
-              <p>{item.descricao}</p>
+              <h3>{item.name}</h3>
+              <p>{item.description}</p>
             </Details>
           </MenuItem>
         ))}
