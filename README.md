@@ -12,11 +12,11 @@ O sistema permite a gestão de produtos (itens de sushi) com funcionalidades com
 
 O codigo atualmente está rodando sem utiizar sua conexão com o banco de dados, para utiizar ela siga este passo a passo.
 
-##Como rodar o codigo com o banco de dados (Opcional)##
+**Como rodar o codigo com o banco de dados (Opcional)**
 -Para rodar o projeto, primeiro configure o banco de dados com o schema que foi anexado no class
 -A configuração precisar ter os itens dessa imagem ![Banco de Dados](https://github.com/JoaoVitor75/Cardapio/assets/109941281/c97cdd17-2470-4ad3-bf14-755fa608ca80)
 -Substitua este trecho do sushi front Menu.jsx linha 127 a 139
- <MenuList>
+ `<MenuList>
         {data.map((item, index) => (
           <MenuItem key={index} onClick={() => handleItemClick(index)} >
             <img src={item.imagens} alt={item.nome} onClick={() => handleItemClick(index)} />
@@ -28,14 +28,14 @@ O codigo atualmente está rodando sem utiizar sua conexão com o banco de dados,
             </Details>
           </MenuItem>
         ))}
-      </MenuList>
+      </MenuList>`
 -Depois rode o back end ("sushi")
 -Rode o front end ("sushifront") , abra um terminal e digite o comando " npm run dev "
 -Abra o http://localhost:5173.
 
 Segue o video do código rodando com a integração ao banco de dados, se quiser dar uma olhada
 
-** Video ** 
+**Video**
 https://github.com/JoaoVitor75/Cardapio/assets/109941281/97b1d6f9-62b9-4e37-8576-f1856e07a3c9
 
 Estrutura do Código (Back End)
@@ -49,7 +49,7 @@ com.joao.sushi.produtos.orm: Representa objetos de mapeamento objeto-relacional 
 com.joao.sushi.produtos.repository: Contém a interface do repositório Spring Data JPA para dados de produtos.
 com.joao.sushi.produtos.services: Implementa a lógica de negócios para o gerenciamento de produtos.
 
-** Configuração ** 
+**Configuração**
 WebConfig
 Descrição: Configuração global para permitir requisições CORS (Cross-Origin Resource Sharing) em todos os endpoints.
 
@@ -66,7 +66,7 @@ public class WebConfig implements WebMvcConfigurer {
 Uso
 O sistema fornece endpoints REST para executar operações básicas de CRUD em produtos de sushi. Acesse esses endpoints por meio de uma aplicação cliente ou de ferramentas como o Postman.
 
-** Endpoints ** 
+**Endpoints**
 Buscar Produto por ID
 Endpoint: /Menu/{id}
 Método HTTP: GET
