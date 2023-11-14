@@ -12,7 +12,7 @@ O sistema permite a gestão de produtos (itens de sushi) com funcionalidades com
 
 O codigo atualmente está rodando sem utiizar sua conexão com o banco de dados, para utiizar ela siga este passo a passo.
 
-** Como rodar o codigo com o banco de dados (Opcional) ** 
+##Como rodar o codigo com o banco de dados (Opcional)##
 -Para rodar o projeto, primeiro configure o banco de dados com o schema que foi anexado no class
 -A configuração precisar ter os itens dessa imagem ![Banco de Dados](https://github.com/JoaoVitor75/Cardapio/assets/109941281/c97cdd17-2470-4ad3-bf14-755fa608ca80)
 -Substitua este trecho do sushi front Menu.jsx linha 127 a 139
